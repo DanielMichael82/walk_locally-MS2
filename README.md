@@ -2,9 +2,7 @@
 
 [View the live project here.]()
 
-This is the website for Walk Locally, a walking project that aims to help users discover their local area and stay active, whether that be solo, with a group of friends or as a family. Alongside this a focus for the site is to have a community section where photographers can meet up and share experiences and photography challenges. 
-This website is designed to be responsive and accessible on a range of devices, making it easy to navigate for potential customers.
-
+This is the website for Walk Locally, a walking project that aims to help users discover their local area and stay active, whether that be solo, with a group of friends or as a family.
 
 <h2 align="center"><img src=""></h2>
 
@@ -56,36 +54,35 @@ This website is designed to be responsive and accessible on a range of devices, 
 
 ### User stories
 
-    -   #### First Time User Goals
+     #### First Time User Goals
 
         1. As a first-time user to the site, .
         2. As a first-time user to the site, .
         3. As a first-time user to the site, .
 
-    -   #### Returning User Goals
+     #### Returning User Goals
 
         1. As a returning user, .
         2. As a returning user, .
         3. As a returning user, .
         4. As a returning user, .
 
-    -   #### Frequent User Goals
+     #### Frequent User Goals
         1. As a Frequent User, .
         2. As a Frequent User, .
         3. As a Frequent User, .
 
 
 ### Design
-    -   #### Colour Scheme
+     #### Colour Scheme
         -   
-    -   #### Typography
+     #### Typography
         -   
-    -   #### Imagery
+     #### Imagery
         -    
+ ### Wireframes
 
--   ### Wireframes
-
-<h2 align="center"><img></h2>
+<h2 align="center"><img src=""></h2>
 
 ## Features
 
@@ -108,7 +105,6 @@ This website is designed to be responsive and accessible on a range of devices, 
 ## Footer
 
 - 
-
 
 ## Home
 
