@@ -45,11 +45,11 @@ This is the website for Walk Locally, a walking project that aims to help users 
 
 -	### Owners Business Goals
 
-    -   1. As the owner of the website, .
-        2. As the owner of the website, .
-        3. As the owner of the website, .
-        4. As the owner of the business, .
-        5. As the owner of the website,  
+       1. As the owner of the website, .
+       2. As the owner of the website, .
+       3. As the owner of the website, .
+       4. As the owner of the business, .
+       5. As the owner of the website,  
 
 
 ### User stories
