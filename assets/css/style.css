@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300;1,400;1,700&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap');
+
+body, html {
+  height: 100%;
+  font-family: Lato, sans-serif;
+  text-decoration: rgb(73, 68, 68);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.bg-img {
+    background-image: url("../images/contact-background.JPEG");
+    min-height: 750px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.form-row {
+    position: absolute;
+    right: 0;
+    margin: auto;
+    max-width: 300px;
+    padding: 16px;
+    background-color: transparent;
+}
+
+footer {
+    position: relative;
+}
+
+.social-links {
+    text-align: center;
+}
+
+.social-links li {
+    display: inline;
+}
+
+.social-links i {
+    font-size: 140%;
+    margin: 1%;
+    padding: 5%;
+    color: rgb(73, 68, 68);
+}
+
+dl, ol, ul {
+    margin-right: 40px;
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
