@@ -4,10 +4,14 @@ body, html {
   height: 100%;
   font-family: Lato, sans-serif;
   text-decoration: rgb(73, 68, 68);
+  background-color: #c9dfca!important;
 }
 
 * {
   box-sizing: border-box;
+}
+.bg-light {
+    background-color: #c9dfca!important;
 }
 
 .bg-img {
@@ -26,6 +30,11 @@ body, html {
     max-width: 300px;
     padding: 16px;
     background-color: transparent;
+}
+
+.dropdown {
+    margin-left: 125px;
+    margin-top: 20px;
 }
 
 footer {
@@ -51,4 +60,8 @@ dl, ol, ul {
     margin-right: 40px;
     margin-top: 0;
     margin-bottom: 1rem;
+}
+
+div#map {
+    min-height: 360px;
 }
