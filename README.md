@@ -43,7 +43,7 @@ This is the website for Walk Locally, a walking project that aims to help users 
 ## User Experience (UX)
 
 
--	### Owners Business Goals
+#### Owners Business Goals
 
        1. As the owner of the website, .
        2. As the owner of the website, .
@@ -54,33 +54,33 @@ This is the website for Walk Locally, a walking project that aims to help users 
 
 ### User stories
 
-     #### First Time User Goals
+#### First Time User Goals
 
         1. As a first-time user to the site, .
         2. As a first-time user to the site, .
         3. As a first-time user to the site, .
 
-     #### Returning User Goals
+#### Returning User Goals
 
         1. As a returning user, .
         2. As a returning user, .
         3. As a returning user, .
         4. As a returning user, .
 
-     #### Frequent User Goals
+#### Frequent User Goals
         1. As a Frequent User, .
         2. As a Frequent User, .
         3. As a Frequent User, .
 
 
 ### Design
-     #### Colour Scheme
+#### Colour Scheme
         -   
-     #### Typography
+#### Typography
         -   
-     #### Imagery
+#### Imagery
         -    
- ### Wireframes
+### Wireframes
 
 <h2 align="center"><img src=""></h2>
 
