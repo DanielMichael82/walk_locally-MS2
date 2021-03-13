@@ -23,6 +23,10 @@ body, html {
     position: relative;
 }
 
+.input-group {
+    margin-top: 50px;
+}
+
 .form-row {
     position: absolute;
     right: 0;
