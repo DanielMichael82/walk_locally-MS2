@@ -12,6 +12,12 @@
         integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
+    <script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.2.4/email.min.js"></script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("user_dDmJKtzuw6YvjQbxdhQzM");
+        })();
+    </script>
 </head>
 
 <body>
@@ -41,35 +47,33 @@
     </header>
 
     <!--Contact Form-->
-    <div class="bg-img">
-    <form class="contact-form" action="#" method="post">
-        <div class="form-row align-items-center">
-            <div class="col-auto">
-                <input class="text-input" type="text" id="fname" name="fname" size="25" placeholder="First Name"
-                    required><br><br>
-                <input class="text-input" type="text" id="lname" name="lname" size="25" placeholder="Last Name"
-                    required><br><br>
-                <input class="text-input" id="email" type="email" name="emailaddress" size="25" placeholder="Email"
-                    required><br><br>
-                <label for="Textarea">Message</label>
-                <textarea class="form-control" id="Textarea" placeholder="Drop us a message" required></textarea>
-                <br>
-                <input class="btn btn-success" type="submit" value="Submit">
+    <section class="container-fluid bg-img">
+            <div class="center-form">
+                <form onsubmit="return sendMail(this);">
+                    <input type="text" name="name" class="form-control" id="fullname" placeholder="Name" required />
+                    <input type="text" name="emailaddress" class="form-control" id="emailaddress" placeholder="Email"
+                        required />
+                    <textarea rows="5" name="usermessage" class="form-control" id="usermessage"
+                        placeholder="Message Here" required></textarea>
+                    <button type="submit" class="btn btn-secondary center-block">Submit</button>
+                </form>
             </div>
-        </div>
-    </form>
-    </div>
-    <!-- /.Contact Form-->
+    </section>
+      <!-- Socials -->
 
-    <!--Socials-->
     <footer>
         <ul class="social-links">
-            <li><a href="https://www.facebook.com" rel="noopener" target="_blank"><i class="fab fa-facebook"></i></a></li>
-            <li><a href="https://www.instagram.com" rel="noopener" target="_blank"><i class="fab fa-instagram"></i></a></li>
-            <li><a href="https://www.snapchat.com" rel="noopener" target="_blank"><i class="fab fa-snapchat-square"></i></a></li>
-            <li><a href="https://www.twitter.com" rel="noopener" target="_blank"><i class="fab fa-twitter-square"></i></a></li>
+            <li><a rel="noopener" href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+            </li>
+            <li><a rel="noopener" href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+            </li>
+            <li><a rel="noopener" href="https://www.snapchat.com" target="_blank"><i
+                        class="fab fa-snapchat-square"></i></a></li>
+            <li><a rel="noopener" href="https://www.twitter.com" target="_blank"><i
+                        class="fab fa-twitter-square"></i></a></li>
         </ul>
     </footer>
+
     <!-- /.Socials -->
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
