@@ -13,7 +13,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.1/css/hover-min.css"
         type="text/css" />
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
     <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
+    <script src="/assets/js/maps.js"></script>
 </head>
 
 <body>
@@ -72,15 +74,17 @@
     <!-- /.Image Carousel-->
 
     <!-- Location Dropdown-->
-    <div class="input-group">
-  <select class="custom-select" id="inputGroupSelect04" aria-label="Example select with button addon">
-    <option selected>Choose location...</option>
-    <option value="1">Dorset</option>
-    <option value="2">Hampshire</option>
-    <option value="3">Wiltshire</option>
-  </select>
-  <div class="input-group-append">
-    <button class="btn btn-outline-secondary" type="button">Select</button>
+<div class="dropdown">
+  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Where to walk
+  </button>
+  <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+    <button class="dropdown-item" type="button">Stone Henge</button>
+    <button class="dropdown-item" type="button">West Bay</button>
+    <button class="dropdown-item" type="button">Houns Tout</button>
+    <button class="dropdown-item" type="button">Hengistbury Head</button>
+    <button class="dropdown-item" type="button">Corfe Castle</button>
+    <button class="dropdown-item" type="button">Moors Valley</button>
   </div>
 </div>
     <!-- /.Location Dropdown-->
@@ -106,10 +110,9 @@
 
     <!-- /.Socials -->
     <script
-        src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
-    <script async defer
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBTdjOAiHLTc9KYa87emgId-BOqeKxQpeM&callback=initMap"></script>
-    <script src="assets/js/maps.js"></script>
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBTdjOAiHLTc9KYa87emgId-BOqeKxQpeM&callback=initMap&libraries=places&v=weekly"
+      async
+    ></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
         crossorigin="anonymous"></script>

@@ -1,30 +1,37 @@
 let map;
+let service;
+let infowindow;
 
 function initMap() {
-  const map = new google.maps.Map(document.getElementById("map"), {
-    zoom: 7,
-    center: { lat: 51.0688, lng: -1.7945 },
+  const dorset = new google.maps.LatLng(50.7488, -2.3445);
+  infowindow = new google.maps.InfoWindow();
+  map = new google.maps.Map(document.getElementById("map"), {
+    center: dorset,
+    zoom: 15,
   });
-  
-  const labels = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-  
-  const markers = locations.map((location, i) => {
-    return new google.maps.Marker({
-      position: location,
-      label: labels[i % labels.length],
-    });
-  });
- 
-  new MarkerClusterer(map, markers, {
-    imagePath:
-      "https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m",
+  const request = {
+    query: "Moors Valley",
+    fields: ["name", "geometry"],
+  };
+  service = new google.maps.places.PlacesService(map);
+  service.findPlaceFromQuery(request, (results, status) => {
+    if (status === google.maps.places.PlacesServiceStatus.OK && results) {
+      for (let i = 0; i < results.length; i++) {
+        createMarker(results[i]);
+      }
+      map.setCenter(results[0].geometry.location);
+    }
   });
 }
-const locations = [
-  { lat: 51.1789, lng: -1.8262 },
-  { lat: 50.6212, lng: -2.2768 },
-  { lat: 50.8759, lng: -1.6328 },
-  { lat: 50.7370, lng: -2.6688 },
-  { lat: 50.8137, lng: -2.4747 },
-  { lat: 50.6913, lng: -1.9739 },
-];
+
+function createMarker(place) {
+  if (!place.geometry || !place.geometry.location) return;
+  const marker = new google.maps.Marker({
+    map,
+    position: place.geometry.location,
+  });
+  google.maps.event.addListener(marker, "click", () => {
+    infowindow.setContent(place.name || "");
+    infowindow.open(map);
+  });
+}
