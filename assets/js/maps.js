@@ -1,37 +1,35 @@
-let map;
-let service;
-let infowindow;
-
+// This example displays a marker at Durdle Door, Dorset.
+// When the user clicks the marker, an info window opens.
 function initMap() {
-  const dorset = new google.maps.LatLng(50.7488, -2.3445);
-  infowindow = new google.maps.InfoWindow();
-  map = new google.maps.Map(document.getElementById("map"), {
-    center: dorset,
+  const durdle_door = { lat: 50.6212, lng: -2.2768 };
+  const map = new google.maps.Map(document.getElementById("map"), {
     zoom: 15,
+    center: durdle_door,
   });
-  const request = {
-    query: "Moors Valley",
-    fields: ["name", "geometry"],
-  };
-  service = new google.maps.places.PlacesService(map);
-  service.findPlaceFromQuery(request, (results, status) => {
-    if (status === google.maps.places.PlacesServiceStatus.OK && results) {
-      for (let i = 0; i < results.length; i++) {
-        createMarker(results[i]);
-      }
-      map.setCenter(results[0].geometry.location);
-    }
+  const contentString =
+    '<div id="content">' +
+    '<div id="siteNotice">' +
+    "</div>" +
+    '<h1 id="firstHeading" class="firstHeading">Durdle Door</h1>' +
+    '<div id="bodyContent">' +
+    '<p><b>Durdle Door</b>, is a natural limestone arch on the Jurassic Coast in Dorset, England.' +
+    'Walking this beautiful part of the <b>Jurassic Coast</b> an (UNESCO World Heritage Site)' +
+    'As a family we like to start from the Lulworth Cove car park (charges apply), making our way up the challenging gravel track to the site.' +
+    'This way you see the stunning scenery of Lulworth Cove, Man o War Bay and Durdle Door itself' +
+    'But there is also a car park a shorter walk away from Durdle Door for less of a challenge but still get to sample stunning site. </p>' +
+    '<img src="assets/images/durdledoor.jpg" width=180 height=80>' +
+    "</div>" +
+    "</div>";
+  const infowindow = new google.maps.InfoWindow({
+    content: contentString,
+  });
+  const marker = new google.maps.Marker({
+    position: durdle_door,
+    map,
+    title: "Durdle Door",
+  });
+  marker.addListener("click", () => {
+    infowindow.open(map, marker);
   });
 }
 
-function createMarker(place) {
-  if (!place.geometry || !place.geometry.location) return;
-  const marker = new google.maps.Marker({
-    map,
-    position: place.geometry.location,
-  });
-  google.maps.event.addListener(marker, "click", () => {
-    infowindow.setContent(place.name || "");
-    infowindow.open(map);
-  });
-}
