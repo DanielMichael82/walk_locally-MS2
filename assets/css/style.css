@@ -35,6 +35,19 @@ body, html {
     background-size: cover;
     position: relative;
 }
+.floating-panel {
+        position: absolute;
+        top: 10px;
+        left: 25%;
+        z-index: 5;
+        background-color: #c9dfca;
+        padding: 5px;
+        border: 1px solid #999;
+        text-align: center;
+        font-family: 'Lato','sans-serif';
+        line-height: 30px;
+        padding-left: 10px;
+      }
 
 .center-form {
     position: relative;
@@ -42,11 +55,6 @@ body, html {
     max-width: 300px;
     padding: 16px;
     padding-top: 200px;
-}
-
-.dropdown {
-    margin-left: 125px;
-    margin-top: 20px;
 }
 
 footer {
