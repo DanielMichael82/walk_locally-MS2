@@ -1,4 +1,4 @@
-<h1 align="center">Walk Locally</h1>
+<h1 align="center"> Walk Locally</h1>
 
 [View the live project here.]()
 
@@ -74,6 +74,7 @@ This is the website for Walk Locally, a walking project that aims to help users 
 
 
 ### Design
+
 #### Colour Scheme
         -   
 #### Typography
@@ -108,9 +109,9 @@ This is the website for Walk Locally, a walking project that aims to help users 
 
 ## Home
 
-### Image Carosel
+### Image Carousel
 
-- The bootstrap image carosel is placed under the navigation bar, which circles through walking styled images.
+- The bootstrap image carousel is placed under the navigation bar, which cycles through walking styled images.
 
 ### 
 
@@ -147,7 +148,7 @@ and a message box for any questions required.  This section uses JSemail integra
 1. [Bootstrap 4.6.0:](https://getbootstrap.com/docs/4.6/getting-started/introduction/)
     - Bootstrap was used to assist with the responsiveness and styling of the website.
 1. [Google Fonts:](https://fonts.google.com/)
-    - Google fonts were used to import the 'Raleway' font into the style.css file which is used on all pages throughout the project.
+    - Google fonts were used to import the 'Lato' font into the style.css file which is used on all pages throughout the project.
 1. [Font Awesome:](https://fontawesome.com/)
     - Font Awesome was used on all pages throughout the website to add icons for aesthetic and UX purposes.
 1. [jQuery:](https://jquery.com/)
@@ -166,6 +167,8 @@ and a message box for any questions required.  This section uses JSemail integra
     - Balsamiq was used to create the [wireframes]() during the design process.
 1. [Chrome DevTools:](https://developers.google.com/web/tools/chrome-devtools)
     - Chrome DevTools have massively assisted me during the build of this site, helping with fixes to my code and positioning of elements.
+
+## Testing
 
 ### Functionality Testing 
 

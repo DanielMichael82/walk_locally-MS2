@@ -3,8 +3,8 @@
 body, html {
   height: 100%;
   font-family: Lato, sans-serif;
-  text-decoration: rgb(73, 68, 68);
-  background-color: #9dbd9a!important;
+  text-decoration: #2C362B;
+  background-color: #61755F!important;
   text-align: center;
 }
 
@@ -13,18 +13,18 @@ body, html {
 }
 
 .bg-light {
-    background-color: #9dbd9a!important;
+    background-color: #61755F!important;
 }
 
 .navbar-light .navbar-toggler {
-    background-color: #c9dfca;
-    border-color: #292929;
+    background-color: #96B593;
+    border-color: #2C362B;
 }
 
 .btn-outline-secondary:hover {
     color: #fff;
-    background-color: #c9dfca;
-    border-color: #292929;
+    background-color: #96B593;
+    border-color: #2C362B;
 }
 
 .bg-img {
@@ -35,18 +35,18 @@ body, html {
     background-size: cover;
     position: relative;
 }
-.floating-panel {
-        position: absolute;
+#floating-panel {
         top: 10px;
         left: 25%;
         z-index: 5;
-        background-color: #c9dfca;
+        background-color: #96B593;
         padding: 5px;
-        border: 1px solid #999;
+        border: 1px solid #2C362B;
         text-align: center;
         font-family: 'Lato','sans-serif';
         line-height: 30px;
         padding-left: 10px;
+        margin-bottom: 30px;
       }
 
 .center-form {
@@ -73,7 +73,7 @@ footer {
     font-size: 140%;
     margin: 1%;
     padding: 5%;
-    color: rgb(73, 68, 68);
+    color: #2C362B;
 }
 
 dl, ol, ul {
