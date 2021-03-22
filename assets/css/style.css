@@ -27,10 +27,6 @@ body, html {
     border-color: #2C362B;
 }
 
-.navbar-collapse {
-    background-color: #96B593;
-}
-
 .bg-img {
     background-image: url("../images/contact-background.JPEG");
     min-height: 750px;
@@ -40,12 +36,16 @@ body, html {
     position: relative;
 }
 
-h5 {
-    font-size: 2rem;
+h4 {
     font-weight: lighter;
     font-family: Open Sans, sans-serif;
     text-transform: uppercase;
     ;
+}
+h5 {
+    font-weight: lighter;
+    font-family: Open Sans, sans-serif;
+    text-transform: uppercase;
 }
 
 p {
