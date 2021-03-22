@@ -27,6 +27,10 @@ body, html {
     border-color: #2C362B;
 }
 
+.navbar-collapse {
+    background-color: #96B593;
+}
+
 .bg-img {
     background-image: url("../images/contact-background.JPEG");
     min-height: 750px;
@@ -35,19 +39,32 @@ body, html {
     background-size: cover;
     position: relative;
 }
+
+h5 {
+    font-size: 2rem;
+    font-weight: lighter;
+    font-family: Open Sans, sans-serif;
+    text-transform: uppercase;
+    ;
+}
+
+p {
+    text-transform: uppercase;
+    font-weight: 300;
+}
 #floating-panel {
-        top: 10px;
-        left: 25%;
-        z-index: 5;
-        background-color: #96B593;
-        padding: 5px;
-        border: 1px solid #2C362B;
-        text-align: center;
-        font-family: 'Lato','sans-serif';
-        line-height: 30px;
-        padding-left: 10px;
-        margin-bottom: 30px;
-      }
+    top: 10px;
+    left: 25%;
+    z-index: 5;
+    background-color: #96B593;
+    padding: 5px;
+    border: 1px solid #2C362B;
+    text-align: center;
+    font-family: 'Lato','sans-serif';
+    line-height: 30px;
+    padding-left: 10px;
+    margin-bottom: 30px;
+    }
 
 .center-form {
     position: relative;
