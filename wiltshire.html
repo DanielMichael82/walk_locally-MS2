@@ -11,20 +11,18 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
         integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.1/css/hover-min.css"
+        type="text/css" />
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
     <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
-    <script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.2.4/email.min.js"></script>
-    <script type="text/javascript">
-        (function () {
-            emailjs.init("user_dDmJKtzuw6YvjQbxdhQzM");
-        })();
-    </script>
+    <script src="/assets/js/maps.js"></script>
 </head>
 
 <body>
 
     <!--Navigation-->
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <nav class="navbar navbar-expand-lg navbar-light">
             <a class="navbar-brand" href="index.html"><i class="fas fa-walking"></i> Locally</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
                 aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -46,27 +44,58 @@
                             <a class="dropdown-item" href="wiltshire.html">Wiltshire</a>
                         </div>
                     </li>
-                    <li class="nav-item active">
-                        <a class="nav-link" href="contact.html">Contact <span class="sr-only">(current)</span></a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
                     </li>
                 </ul>
             </div>
         </nav>
     </header>
+    <!-- /.Navigation -->
 
-    <!--Contact Form-->
-    <section class="container-fluid bg-img">
-        <div class="center-form">
-            <form onsubmit="return sendMail(this);">
-                <input type="text" name="name" class="form-control" id="fullname" placeholder="Name" required />
-                <input type="text" name="emailaddress" class="form-control" id="emailaddress" placeholder="Email"
-                    required />
-                <textarea rows="5" name="usermessage" class="form-control" id="usermessage" placeholder="Message Here"
-                    required></textarea>
-                <button type="submit" class="btn btn-secondary center-block">Submit</button>
-            </form>
+    <!-- Location Jumbotron-->
+
+    <div class="jumbotron">
+        <h1 class="display-4"><i class="fas fa-walking"></i> Wiltshire</h1>
+        <p class="lead">Choose from the locations below and start to <strong>Walk Locally</strong>.</p>
+        <hr class="my-4">
+        <p>Select and search for images and walk information</p>
+    </div>
+
+    <!-- /.Location Jumbotron-->
+
+    <!-- Location Dropdown-->
+    <div id="floating-panel">
+        <select id="address">
+            <option value="Avebury, Wiltshire">Avebury</option>
+            <option value="White Horse, Wiltshire">Bratton Camp & The White Horse</option>
+            <option value="Lacock Abbey, Wiltshire">Lacock Abbey</option>
+            <option value="Salisbury Cathedral, Wiltshire">Salisbury Cathedral</option>
+            <option value="Stourhead, Wiltshire">Stourhead</option>
+            <option value="Stonehenge, Wiltshire">Stonehenge</option>
+        </select>
+        <!-- <input id="address" type="textbox" value="Stonehenge, Wiltshire"> -->
+        <input id="submit" type="button" value="Search">
+    </div>
+    <!-- /.Location Dropdown-->
+
+    <!-- Google Maps API-->
+    <div class="card-deck">
+        <div class="card">
+            <div id="map"></div>
         </div>
-    </section>
+        <div class="card">
+            <img src="..." class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- /.Google Maps API-->
+
     <!-- Socials -->
 
     <footer>
@@ -76,20 +105,27 @@
             <li><a rel="noopener" href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
             </li>
             <li><a rel="noopener" href="https://www.snapchat.com" target="_blank"><i
-                        class="fab fa-snapchat-square"></i></a></li>
+                        class="fab fa-snapchat-square"></i></a>
+            </li>
             <li><a rel="noopener" href="https://www.twitter.com" target="_blank"><i
-                        class="fab fa-twitter-square"></i></a></li>
+                        class="fab fa-twitter-square"></i></a>
+            </li>
         </ul>
     </footer>
 
     <!-- /.Socials -->
-
+    <script
+        src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBTdjOAiHLTc9KYa87emgId-BOqeKxQpeM&callback=initMap"></script>
+    <script src="assets/js/maps.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
         crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
         crossorigin="anonymous"></script>
+
 </body>
 
 </html>
