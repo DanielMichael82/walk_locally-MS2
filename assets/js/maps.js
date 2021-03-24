@@ -1,26 +1,26 @@
-function initMap() {
-    let map = new google.maps.Map(document.getElementById('map'), {
-        zoom: 15,
-        center: { lat: 50.7488, lng: -2.3445 }
-    });
-    let geocoder = new google.maps.Geocoder();
+  let geocoder;
+  let map;
+  function initialize() {
+    geocoder = new google.maps.Geocoder();
+    let latlng = new google.maps.LatLng(50.7488, -2.3445);
+    let mapOptions = {
+      zoom: 8,
+      center: latlng
+    }
+    map = new google.maps.Map(document.getElementById('map'), mapOptions);
+  }
 
-    document.getElementById('submit').addEventListener('click', function () {
-        geocodeAddress(geocoder, map);
-    });
-}
-
-function geocodeAddress(geocoder, resultsMap) {
+  function codeAddress() {
     let address = document.getElementById('address').value;
-    geocoder.geocode({ 'address': address }, function (results, status) {
-        if (status === 'OK') {
-            resultsMap.setCenter(results[0].geometry.location);
-            let marker = new google.maps.Marker({
-                map: resultsMap,
-                position: results[0].geometry.location
-            });
-        } else {
-            alert(`Location was not successful for the following reason: ${status}`);
-        }
+    geocoder.geocode( { 'address': address}, function(results, status) {
+      if (status == 'OK') {
+        map.setCenter(results[0].geometry.location);
+        let marker = new google.maps.Marker({
+            map: map,
+            position: results[0].geometry.location
+        });
+      } else {
+        alert('Geocode was not successful for the following reason: ' + status);
+      }
     });
-}
+  }
