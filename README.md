@@ -43,34 +43,35 @@ This is the website for Walk Locally, a walking project that aims to help users 
 ## User Experience (UX)
 
 
-#### Owners Business Goals
+#### Owners Goals
 
-       1. As the owner of the website, .
-       2. As the owner of the website, .
-       3. As the owner of the website, .
-       4. As the owner of the business, .
-       5. As the owner of the website,  
+       1. As the owner of the website, I want this website to help encourage the public to seek out their local area and enjoying this places with friends and family.
+       2. As the owner of the website, I want to be able to present a clean and easy to navigate website that focus' on a mobile experience for when the user is out and about.
+       3. As the owner of the website, I want engagement with user to understand what they want from the the website to help with future implementations.
+       4. As the owner of the website, I want the site to be able to offer routes of their preferred walk.
+       5. As the owner of the website, I would like our users but connect with us on our social media platforms. 
 
 
 ### User stories
 
 #### First Time User Goals
-
-        1. As a first-time user to the site, .
-        2. As a first-time user to the site, .
-        3. As a first-time user to the site, .
+       1. As a first-time user to the site, I want to understand the main purpose of the site and discover the walking routes in my local area.
+       2. As a first-time user to the site, I want to be able to easily navigate throughout the site to find content.
+       3. As a first-time user to the site, I want to see clear information and photos locations available. 
+       4. As a first-time user to the site, I also want to locate their social media links to help with the choice of walk I take.
+        
 
 #### Returning User Goals
 
-        1. As a returning user, .
-        2. As a returning user, .
-        3. As a returning user, .
-        4. As a returning user, .
+        1. As a returning user, I want more information of the walk that I ultimatly take with pictures.
+        2. As a returning user, I want to be able to know my way around the site.
+        3. As a returning user, 
+        4. As a returning user, 
 
 #### Frequent User Goals
-        1. As a Frequent User, .
-        2. As a Frequent User, .
-        3. As a Frequent User, .
+        1. As a Frequent User, I want to see more walking routes added.
+        2. As a Frequent User, I want to feel like I am apart of a community.
+        3. As a Frequent User, 
 
 
 ### Design
@@ -95,7 +96,7 @@ This is the website for Walk Locally, a walking project that aims to help users 
     - On left side there is a logo. 
     - Next to the logo there are three links or burger menu which contains:
         - Home
-        - Location
+        - Locations
         - Contact
     - On right side there are social media icon links.
         - Facebook
