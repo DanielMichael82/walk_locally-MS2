@@ -1,10 +1,8 @@
 <h1 align="center"> Walk Locally</h1>
 
-[View the live project here.]()
+[View the live project here.](https://danielmichael82.github.io/walk_locally-MS2/)
 
 This is the website for Walk Locally, a walking project that aims to help users discover their local area and stay active, whether that be solo, with a group of friends or as a family.
-
-<h2 align="center"><img src=""></h2>
 
 # Table of contents
 
@@ -42,47 +40,67 @@ This is the website for Walk Locally, a walking project that aims to help users 
 
 ## User Experience (UX)
 
-
 #### Owners Goals
 
-       1. As the owner of the website, I want this website to help encourage the public to seek out their local area and enjoying this places with friends and family.
-       2. As the owner of the website, I want to be able to present a clean and easy to navigate website that focus' on a mobile experience for when the user is out and about.
-       3. As the owner of the website, I want engagement with user to understand what they want from the the website to help with future implementations.
-       4. As the owner of the website, I want the site to be able to offer routes of their preferred walk.
-       5. As the owner of the website, I would like our users but connect with us on our social media platforms. 
+1. As the owner of the website, I want this website to help encourage the public to seek out their local area and enjoying this places with friends and family.
+
+2. As the owner of the website, I want to be able to present a clean and easy to navigate website that focus' on a mobile experience for when the user is out and about.
+
+3. As the owner of the website, I want engagement with user to understand what they want from the the website to help with future implementations.
+
+4. As the owner of the website, I want the site to be able to offer routes of their preferred walk.
+
+5. As the owner of the website, I would like our users but connect with us on our social media platforms. 
 
 
-### User stories
+## User stories
 
 #### First Time User Goals
-       1. As a first-time user to the site, I want to understand the main purpose of the site and discover the walking routes in my local area.
-       2. As a first-time user to the site, I want to be able to easily navigate throughout the site to find content.
-       3. As a first-time user to the site, I want to see clear information and photos locations available. 
-       4. As a first-time user to the site, I also want to locate their social media links to help with the choice of walk I take.
-        
 
+1. As a first-time user to the site, I want to understand the main purpose of the site and discover the walking routes in my local area.
+
+2. As a first-time user to the site, I want to be able to easily navigate throughout the site to find content.
+
+3. As a first-time user to the site, I want to see clear information and photos locations available. 
+
+4. As a first-time user to the site, I also want to locate their social media links to help with the choice of walk I take.
+        
 #### Returning User Goals
 
-        1. As a returning user, I want more information of the walk that I ultimatly take with pictures.
-        2. As a returning user, I want to be able to know my way around the site.
-        3. As a returning user, 
-        4. As a returning user, 
+1. As a returning user, I want more information of the walk that I ultimatly take with pictures.
+
+2. As a returning user, I want to be able to know my way around the site.
+
+3. As a returning user, 
+
+4. As a returning user, 
 
 #### Frequent User Goals
-        1. As a Frequent User, I want to see more walking routes added.
-        2. As a Frequent User, I want to feel like I am apart of a community.
-        3. As a Frequent User, 
+
+1. As a Frequent User, I want to see more walking routes added.
+
+2. As a Frequent User, I want to feel like I am apart of a community.
+
+3. As a Frequent User, 
 
 
-### Design
+## Design
 
 #### Colour Scheme
-        -   
+
+<img src="assets/images/color01.png" width="80" height="80"> <br> **#5F735D** is the main color of the site, I feel that this color is a great repesentation of the walking theme.
+
+<img scr="assets/images/color02.png" width="80" height="80"> <br> **#96B593** is the secondary color of the site, this color is a shade that compliments **#5F735D** and helps the burger menu and other buttons standout.
+
 #### Typography
-        -   
+
+The Lato is the main font used throughout the site with Sans Serif as the fallback font in case for any reason the font isn't being imported into the site correctly. Open-Sans.
+
 #### Imagery
-        -    
-### Wireframes
+
+Imagery is important. The large, hero image is designed to be striking and catch the user's attention. It also calls out community to me and this want I wanted to bring to the home page.
+
+#### Wireframes
 
 <h2 align="center"><img src=""></h2>
 
