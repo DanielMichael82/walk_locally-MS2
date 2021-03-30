@@ -43,6 +43,12 @@ body, html {
   box-sizing: border-box;
 }
 
+h2 {
+    text-transform: uppercase;
+    font-family: Open Sans, sans-serif;
+    font-weight: lighter;
+}
+
 h4 {
     font-weight: lighter;
     font-family: Open Sans, sans-serif;
@@ -60,16 +66,14 @@ p {
     font-weight: 300;
 }
 
-#floating-panel {
-    top: 10px;
-    left: 25%;
-    z-index: auto;
-    padding: 5px;
+.hero-text {
     text-align: center;
-    line-height: 30px;
-    padding-left: 10px;
-    margin-bottom: 30px;
-    }
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
 
 /*--------------------------------------------Heading*/
 
@@ -103,7 +107,26 @@ dl, ol, ul {
 
 /*--------------------------------------------Locations*/
 
+.hero-image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/assets/images/durdledoor.jpg");
+  height: 50%;
+  width: 100%;
+  animation-name: hero-zoom;
+  animation-duration: 5s;
+  animation-fill-mode: forwards;
 
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+@keyframes hero-zoom {
+  from {transform: scale(1);
+  }
+  to {transform: scale(1.1);
+  }
+}
 
 /*--------------------------------------------Contact*/
 
@@ -122,6 +145,12 @@ dl, ol, ul {
     max-width: 300px;
     padding: 16px;
     padding-top: 200px;
+}
+
+.btn-secondary {
+    color: #fff;
+    background-color: #96B593;
+    border-color: #6c757d;
 }
 
 /*--------------------------------------------Map*/

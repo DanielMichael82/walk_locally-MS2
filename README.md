@@ -7,7 +7,7 @@ This is the website for Walk Locally, a walking project that aims to help users 
 # Table of contents
 
 - [UX](#User-Experience)
-    - [Owners Business Goals](#owners-business-goals)
+    - [Owners Goals](#owners-goals)
     - [User stories](#user-stories)
         - [First Time User Goals](#first-time-user-goals)
         - [Returning User goals](#returning-user-goals)
@@ -106,9 +106,10 @@ Imagery is important. The large, hero image is designed to be striking and catch
 
 ## Features
 
-## Navigation bar
+### Navigation bar
 
-- Navigation bar is visible on the top left hand-side of each page. The navigation bar is responsive and will adapt to mobile devices and tablets by a change into a burger menu.
+Navigation bar is visible on the top left hand-side of each page. The navigation bar is responsive and will adapt to mobile devices and tablets by a change into a burger menu.
+
 - Navigation scheme:
 
     - On left side there is a logo. 
@@ -130,19 +131,19 @@ Imagery is important. The large, hero image is designed to be striking and catch
 
 ### Image Carousel
 
-- The bootstrap image carousel is placed under the navigation bar, which cycles through walking styled images.
+The bootstrap image carousel is placed under the navigation bar, which cycles through walking styled images.
 
-### 
+### Featured Cards
 
 - 
 
 ## Location
 
-- Location offers the user to select the area in which they wish to walk, This area will include a Google Maps API showing the local area with markers for localised walks.
+Location offers the user to select the area in which they wish to walk, This area will include a Google Maps API showing the local area with markers for localised walks.
 
 ## Contact
 
-- Contact form is where most of the links lead to. The user can contact Walk Locally by filling in the form with First Name, Last Name, Email Address
+Contact form is where most of the links lead to. The user can contact Walk Locally by filling in the form with First Name, Last Name, Email Address
 and a message box for any questions required.  This section uses JSemail integration when submitting a form.
 
 ## Future Implementations
