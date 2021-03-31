@@ -1,37 +1,65 @@
-// This example displays a marker at Durdle Door, Dorset.
-// When the user clicks the marker, an info window opens.
+let map, popup, Popup;
+
+/** Initializes the map and the custom popup. */
 function initMap() {
-  const durdle_door = { lat: 50.6212, lng: -2.2768 };
-  const map = new google.maps.Map(document.getElementById("map"), {
-    zoom: 15,
-    center: durdle_door,
+  map = new google.maps.Map(document.getElementById("map"), {
+    center: {lat: 51.1789, lng: -1.8262 },
+    zoom: 8,
   });
-  const contentString =
-    '<div id="content">' +
-    '<div id="siteNotice">' +
-    "</div>" +
-    '<h1 id="firstHeading" class="firstHeading">Durdle Door</h1>' +
-    '<div id="bodyContent">' +
-    '<p><b>Durdle Door</b>, is a natural limestone arch on the Jurassic Coast in Dorset, England.' +
-    'Walking this beautiful part of the <b>Jurassic Coast</b> an (UNESCO World Heritage Site)' +
-    'As a family we like to start from the Lulworth Cove car park (charges apply), making our way up the challenging gravel track to the site.' +
-    'This way you see the stunning scenery of Lulworth Cove, Man o War Bay and Durdle Door itself' +
-    'But there is also a car park a shorter walk away from Durdle Door for less of a challenge but still get to sample stunning site. </p>' +
-    '<img src="assets/images/durdledoor.jpg" width=180 height=80>' +
-    "</div>" +
-    "</div>";
-  const infowindow = new google.maps.InfoWindow({
-    content: contentString,
-  });
-  const marker = new google.maps.Marker({
-    position: durdle_door,
-    map,
-    title: "Durdle Door",
-  });
-  marker.addListener("click", () => {
-    infowindow.open(map, marker);
-  });
-  marker.addListener("click", () => {
-    infowindow.close(map, marker);
-  });
+
+  /**
+   * A customized popup on the map.
+   */
+  class Popup extends google.maps.OverlayView {
+    constructor(position, content) {
+      super();
+      this.position = position;
+      content.classList.add("popup-bubble");
+      // This zero-height div is positioned at the bottom of the bubble.
+      const bubbleAnchor = document.createElement("div");
+      bubbleAnchor.classList.add("popup-bubble-anchor");
+      bubbleAnchor.appendChild(content);
+      // This zero-height div is positioned at the bottom of the tip.
+      this.containerDiv = document.createElement("div");
+      this.containerDiv.classList.add("popup-container");
+      this.containerDiv.appendChild(bubbleAnchor);
+      // Optionally stop clicks, etc., from bubbling up to the map.
+      Popup.preventMapHitsAndGesturesFrom(this.containerDiv);
+    }
+    /** Called when the popup is added to the map. */
+    onAdd() {
+      this.getPanes().floatPane.appendChild(this.containerDiv);
+    }
+    /** Called when the popup is removed from the map. */
+    onRemove() {
+      if (this.containerDiv.parentElement) {
+        this.containerDiv.parentElement.removeChild(this.containerDiv);
+      }
+    }
+    /** Called each frame when the popup needs to draw itself. */
+    draw() {
+      const divPosition = this.getProjection().fromLatLngToDivPixel(
+        this.position
+      );
+      // Hide the popup when it is far out of view.
+      const display =
+        Math.abs(divPosition.x) < 4000 && Math.abs(divPosition.y) < 4000
+          ? "block"
+          : "none";
+
+      if (display === "block") {
+        this.containerDiv.style.left = divPosition.x + "px";
+        this.containerDiv.style.top = divPosition.y + "px";
+      }
+
+      if (this.containerDiv.style.display !== display) {
+        this.containerDiv.style.display = display;
+      }
+    }
+  }
+  popup = new Popup(
+    new google.maps.LatLng(50.6212, -2.2768),
+    document.getElementById("corfe")
+  );
+  popup.setMap(map);
 }

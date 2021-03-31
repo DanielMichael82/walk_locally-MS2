@@ -58,11 +58,9 @@
     <!-- /.Location Jumbotron-->
     <hr>
     <!-- Google Maps API-->
-    <div class="card-deck">
-        <div class="card">
+
             <div id="map"></div>
-        </div>
-    </div>
+            <div id="corfe">Corfe Castle</div>
 
     <!-- /.Google Maps API-->
 
@@ -84,8 +82,11 @@
     </footer>
 
     <!-- /.Socials -->
-    <script async defer
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBTdjOAiHLTc9KYa87emgId-BOqeKxQpeM&callback=initMap"></script>
+    <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBTdjOAiHLTc9KYa87emgId-BOqeKxQpeM&callback=initMap&libraries=&v=weekly"
+      async
+    ></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
         crossorigin="anonymous"></script>
