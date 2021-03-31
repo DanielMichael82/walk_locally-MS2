@@ -109,7 +109,7 @@ dl, ol, ul {
 
 .hero-image {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/assets/images/durdledoor.jpg");
-  height: 400px;
+  max-height: 600px;
   width: 100%;
   animation-name: hero-zoom;
   animation-duration: 5s;

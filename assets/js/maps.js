@@ -1,53 +1,37 @@
-let map
-
+// This example displays a marker at Durdle Door, Dorset.
+// When the user clicks the marker, an info window opens.
 function initMap() {
-    const map = new google.maps.Map(document.getElementById("map"), {
-        zoom: 8,
-        center: { lat: 51.1789, lng: -1.8262 },
-    });
-
-// For each of these markers, give them a title with their index, and when
-// they are clicked they should open an infowindow with text
-    const locations = ["Corfe Castle", "Durdle Door", "Hengistbury Head", "Beaulieu", "New Forest", "South Downs", "Lacock Abbey",
-"Salisbury Cathedral", "Stonehenge"];
-
-    for (let i = 0; i < locations.length; ++i) {
-        const marker = new google.maps.Marker({
-            position: {
-            lat: 50.6395, lng: -2.0566 //Corfe Castle
-            },
-            lat: 50.6212, lng: -2.2768 //Durdle Door
-        }, {
-            lat: 50.7191, lng: -1.7661 //Hengistbury Head
-        }, {
-            lat: 50.8156, lng: -1.4532 //Beaulieu
-        }, {
-            lat: 50.8764, lng: -1.6312 //New Forest National Park
-        }, {
-            lat: 50.9893, lng: -0.7381 //South Downs National Park
-        }, {
-            lat: 51.4147, lng: -2.1172 //Lacock Abbey
-        }, {
-            lat: 51.0661, lng: -1.7975 //Salisbury Cathedral
-        }, {
-            lat: 51.1789, lng: -1.8262 //Stonehenge
-        });
-
-            attachLocations(marker, locations[i]);
-    }
+  const durdle_door = { lat: 50.6212, lng: -2.2768 };
+  const map = new google.maps.Map(document.getElementById("map"), {
+    zoom: 15,
+    center: durdle_door,
+  });
+  const contentString =
+    '<div id="content">' +
+    '<div id="siteNotice">' +
+    "</div>" +
+    '<h1 id="firstHeading" class="firstHeading">Durdle Door</h1>' +
+    '<div id="bodyContent">' +
+    '<p><b>Durdle Door</b>, is a natural limestone arch on the Jurassic Coast in Dorset, England.' +
+    'Walking this beautiful part of the <b>Jurassic Coast</b> an (UNESCO World Heritage Site)' +
+    'As a family we like to start from the Lulworth Cove car park (charges apply), making our way up the challenging gravel track to the site.' +
+    'This way you see the stunning scenery of Lulworth Cove, Man o War Bay and Durdle Door itself' +
+    'But there is also a car park a shorter walk away from Durdle Door for less of a challenge but still get to sample stunning site. </p>' +
+    '<img src="assets/images/durdledoor.jpg" width=180 height=80>' +
+    "</div>" +
+    "</div>";
+  const infowindow = new google.maps.InfoWindow({
+    content: contentString,
+  });
+  const marker = new google.maps.Marker({
+    position: durdle_door,
+    map,
+    title: "Durdle Door",
+  });
+  marker.addListener("click", () => {
+    infowindow.open(map, marker);
+  });
+  marker.addListener("click", () => {
+    infowindow.close(map, marker);
+  });
 }
-
-// Attaches an info window to a marker with the provided message. When the
-// marker is clicked, the info window will open with the site information.
-function attachLocations(marker, locations) {
-    const infowindow = new google.maps.InfoWindow({
-        content: locations,
-    });
-    marker.addListener("click", () => {
-        infowindow.open(marker.get("map"), marker);
-    });
-}
-
-let markerCluster = new MarkerClusterer(map, markers, {
-        imagePath: 'https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m'
-    });
