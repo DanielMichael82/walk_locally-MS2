@@ -43,6 +43,18 @@ let locations = [
             '<img src="assets/images/stonehenge.jpeg" width=180 height=80>' +
             "</div>" +
             "</div>",
+     
+        name:"New Forest", lat: 50.8764, lng: -1.6312, content: '<div id="content">' +
+            '<div id="siteNotice">' +
+            "</div>" +
+            '<h1 id="firstHeading" class="firstHeading">New Forest National Park</h1>' +
+            '<div id="bodyContent">' +
+            '<p>The <b>New Forest</b>, is one of the largest remaining tracts of unenclosed pasture land,' +
+            'heathland and forest in Southern England, covering southwest Hampshire and southeast Wiltshire.' +
+            'More to write. </p>' +
+            '<img src="assets/images/hampshire.jpeg" width=180 height=80>' +
+            "</div>" +
+            "</div>",
     }
 ];
 
