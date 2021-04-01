@@ -1,9 +1,20 @@
 function initMap() {
     let map = new google.maps.Map(document.getElementById("map"), {
-        zoom: 8,
+        zoom: 3,
         center: { lat: 51.1789, lng: -1.8262 },
     });
 }
+let markers = locations.map((location, i) => {
+    return new google.maps.Marker({
+        position: location,
+        label: labels[i % labels.length],
+    });
+});
+// Add a marker clusterer to manage the markers.
+new MarkerClusterer(map, markers, {
+    imagePath:
+        "https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m",
+});
 
 let locations = [
     {
@@ -31,7 +42,7 @@ let locations = [
             '<img src="assets/images/corfe.jpeg" width=180 height=80>' +
             "</div>" +
             "</div>",
-        
+
         name: "Stonehenge", lat: 51.1789, lng: -1.8262, content: '<div id="content">' +
             '<div id="siteNotice">' +
             "</div>" +
@@ -43,8 +54,8 @@ let locations = [
             '<img src="assets/images/stonehenge.jpeg" width=180 height=80>' +
             "</div>" +
             "</div>",
-     
-        name:"New Forest", lat: 50.8764, lng: -1.6312, content: '<div id="content">' +
+
+        name: "New Forest", lat: 50.8764, lng: -1.6312, content: '<div id="content">' +
             '<div id="siteNotice">' +
             "</div>" +
             '<h1 id="firstHeading" class="firstHeading">New Forest National Park</h1>' +
@@ -61,17 +72,10 @@ let locations = [
 // Attaches an info window to a marker with the provided message. When the
 // marker is clicked, the info window will open with the site information.
 function attachLocations(marker, locations) {
-    const infowindow = new google.maps.InfoWindow({
+    let infowindow = new google.maps.InfoWindow({
         content: locations,
     });
     marker.addListener("click", () => {
         infowindow.open(marker.get("map"), marker);
     });
 }
-
-let markerCluster = new MarkerClusterer(map, markers, {
-    imagePath: 'https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m'
-});
-
-
-
