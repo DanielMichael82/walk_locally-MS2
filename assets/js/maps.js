@@ -1,5 +1,7 @@
+let map;
+
 function initMap() {
-    let map = new google.maps.Map(document.getElementById("map"), {
+    map = new google.maps.Map(document.getElementById("map"), {
         zoom: 3,
         center: { lat: 51.1789, lng: -1.8262 },
     });
@@ -7,7 +9,8 @@ function initMap() {
 let markers = locations.map((location, i) => {
     return new google.maps.Marker({
         position: location,
-        label: labels[i % labels.length],
+        map: map,
+        label: location[i % location.length],
     });
 });
 // Add a marker clusterer to manage the markers.
