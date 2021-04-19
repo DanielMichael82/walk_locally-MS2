@@ -104,11 +104,31 @@ dl, ol, ul {
     margin-top: 0;
     margin-bottom: 1rem;
 }
-/*--------------------------------------------Carousel*/
+/*--------------------------------------------Home*/
 
+.home-image {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/assets/images/stonehenge.jpeg");
+    height: 600px;
+    width: 100%;
+    animation-name: hero-zoom;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+@keyframes hero-zoom {
+    from {transform: scale(0.5);
+  }
+    to {transform: scale(1);
+  }
+}
 /*--------------------------------------------Locations*/
 
-.hero-image {
+.locations-image {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/assets/images/durdledoor.jpg");
     height: 600px;
     width: 100%;
@@ -131,13 +151,25 @@ dl, ol, ul {
 
 /*--------------------------------------------Contact*/
 
-.bg-img {
-    background-image: url("../images/contact-background.JPEG");
-    min-height: 750px;
+.contact-image {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/assets/images/contact-background.JPEG");
+    height: 600px;
+    width: 100%;
+    animation-name: hero-zoom;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
+}
+
+@keyframes hero-zoom {
+    from {transform: scale(0.5);
+  }
+    to {transform: scale(1);
+  }
 }
 
 .center-form {
