@@ -75,6 +75,12 @@ p {
     color: white;
 }
 
+@media screen and (max-width: 600px) {
+  div.hero-text {
+    font-size: 1px;
+  }
+}
+
 /*--------------------------------------------Heading*/
 
 /*--------------------------------------------Hover.css*/
