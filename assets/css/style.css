@@ -107,7 +107,7 @@ dl, ol, ul {
 /*--------------------------------------------Home*/
 
 .home-image {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("assets/images/stonehenge.jpeg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://crimson-mastodon-ey7k815d.ws-eu03.gitpod.io/files/download/?id=6ef30f96-fb3a-4818-8305-47ddeaee035e");
     height: 600px;
     width: 100%;
     animation-name: hero-zoom;
@@ -129,7 +129,7 @@ dl, ol, ul {
 /*--------------------------------------------Locations*/
 
 .locations-image {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("assets/images/durdledoor.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://crimson-mastodon-ey7k815d.ws-eu03.gitpod.io/files/download/?id=58d3883a-20df-4061-884e-ef115b65e4e7");
     height: 600px;
     width: 100%;
     animation-name: hero-zoom;
@@ -152,7 +152,7 @@ dl, ol, ul {
 /*--------------------------------------------Contact*/
 
 .contact-image {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("assets/images/spyway.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://crimson-mastodon-ey7k815d.ws-eu03.gitpod.io/files/download/?id=fd9a6af9-f167-406a-b273-b0517a3871a1");
     height: 600px;
     width: 100%;
     animation-name: hero-zoom;
