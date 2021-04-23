@@ -32,7 +32,11 @@ function initMap() {
                 '<div id="bodyContent">' +
                 '<p><b>Corfe Castle</b>, is a castle ruins standing above the village of the same name on the Isle of Purbeck in the county of Dorset, England.</p>' +
                 '<h3><i class="fas fa-walking"></i></h3>' +
-                '<p>Owned by the National Trust, the castle is open to the public </p>' +
+                '<p>Owned by the National Trust, the castle is open to the public but a fee to enter the ruins is required if you are <em>not</em> a National Trust member.' +
+                'Corfe Castle also shares the same name as the village it looks down upon' +
+                'This quaint little village is lovely to walk around and even catch a stream train from the local station to Swanage.' +
+                ' But it is the rolling hills surrounding the castle that we love walking, its once you are at the top of one of these hills,' +
+                'the spectacular views of the Purbecks, Poole and Bournemouth that imprint in our memories of the walk.</p>' +
                 '<img src="assets/images/corfe.jpeg" width=180 height=80>' +
                 "</div>" +
                 "</div>"
@@ -48,8 +52,10 @@ function initMap() {
                 '<h3><i class="fas fa-walking"></i></h3>' +
                 '<p>Stonehenge is a great walk for adults and children alike!' + 
                 'If you would like to focus of a walk around the wonderful countryside,' +
-                'we suggest that you park up on the gravel track not far from the stones, One of the most famous landmarks in the UK, Stonehenge is regarded as a British cultural icon.' +
-                'Stonehenge is owned by the Crown and managed by English Heritage; the surrounding land is owned by the National Trust. </p>' +
+                'we suggest that you park up on the gravel track not far from the stones, walking the surrounding land.' +
+                ' of fields and woodland the Stonehenge landscape is owned my the National Trust and is free to walk around.' +
+                'although the stones themselves are managed by English Heritage, there is a fee to get closer to the stones,' +
+                'unless you are a member of the Nation Trust or English Heritage.</p>' +
                 '<img src="assets/images/stonehenge.jpeg" width=180 height=80>' +
                 "</div>" +
                 "</div>"
@@ -64,26 +70,14 @@ function initMap() {
                 '<p>The <b>New Forest</b>, is one of the largest remaining tracts of unenclosed pasture land,' +
                 'heathland and forest in Southern England, covering southwest Hampshire and southeast Wiltshire.</p>' +
                 '<h3><i class="fas fa-walking"></i></h3>' +
-                '<p>More to write. </p>' +
+                '<p>Where to start!  Such a vast and beautiful National Park <b>The New Forest</b> is.' +
+                'Its cute little villages like Burley, wildlife everywhere (especially the ponies),' +
+                ' but for us it is the enchanting forest. Settle down in Ashurst near the Railway Inn and get lost in' +
+                ' of what the New Forest has to offer </p>' +
                 '<img src="assets/images/hampshire.jpeg" width=180 height=80>' +
                 "</div>" +
                 "</div>"
         },
-        {
-            location: { lat: 50.7116, lng: -2.7637 },
-            content: '<div id="content">' +
-                '<div id="siteNotice">' +
-                "</div>" +
-                '<h2 id="firstHeading" class="firstHeading">West Bay</h2>' +
-                '<div id="bodyContent">' +
-                '<p><b>West Bay</b>, West Bay, also known as Bridport Harbour,' +
-                'is a small harbour settlement and resort on the English Channel coast in Dorset.</p>' +
-                '<h3><i class="fas fa-walking"></i></h3>' +
-                '<p>More to write. </p>' +
-                '<img src="assets/images/westbay.jpeg" width=180 height=80>' +
-                "</div>" +
-                "</div>"
-        }
     ];
 
     // Loop through markers
