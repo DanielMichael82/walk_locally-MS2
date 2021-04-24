@@ -90,7 +90,7 @@ This is the website for Walk Locally, a walking project that aims to help users 
 
 <img src="assets/images/color01.png" width="80" height="80"> <br> **#5F735D** is the main color of the site, I feel that this color is a great repesentation of the walking theme.
 
-<img scr="assets/images/color02.png" width="80" height="80"> <br> **#96B593** is the secondary color of the site, this color is a shade that compliments **#5F735D** and helps the burger menu and other buttons standout.
+<img src="assets/images/color02.png" width="80" height="80"> <br> **#96B593** is the secondary color of the site, this color is a shade that compliments **#5F735D** and helps the burger menu and other buttons standout.
 
 #### Typography
 
@@ -102,7 +102,15 @@ Imagery is important. The large, hero image is designed to be striking and catch
 
 #### Wireframes
 
-<h2 align="center"><img src=""></h2>
+<h2 align="center"><img src="assets/images/desktophome.png"></h2>
+<h2 align="center"><img src="assets/images/desktoplocations.png"></h2>
+<h2 align="center"><img src="assets/images/desktopcontact.png"></h2>
+<h2 align="center"><img src="assets/images/tablethome.png"></h2>
+<h2 align="center"><img src="assets/images/tabletlocations.png"></h2>
+<h2 align="center"><img src="assets/images/tabletcontact.png"></h2>
+<h2 align="center"><img src="assets/images/smartphonehome.png"></h2>
+<h2 align="center"><img src="assets/images/smartphonelocations.png"></h2>
+<h2 align="center"><img src="assets/images/smartphonecontact.png"></h2>
 
 ## Features
 
@@ -117,29 +125,29 @@ Navigation bar is visible on the top left hand-side of each page. The navigation
         - Home
         - Locations
         - Contact
-    - On right side there are social media icon links.
-        - Facebook
-        - Instagram
-        - Snapchat
-        - Twitter
         
 ## Footer
 
-- 
+The footer displays social media site links for:
+
+- Facebook
+- Instagram
+- Snapchat
+- Twitter
 
 ## Home
 
-### Image Carousel
+### Animated Hero Image
 
-The bootstrap image carousel is placed under the navigation bar, which cycles through walking styled images.
+On the home screen you will be greeted by and animated image with a large title in the middle.
 
 ### Featured Cards
 
-- 
+Consisting of 3 bootstrap image cards showing what the site offers the user.
 
 ## Location
 
-Location offers the user to select the area in which they wish to walk, This area will include a Google Maps API showing the local area with markers for localised walks.
+Locations offers the user to select their marker in the area in which they wish to walk, using Google Maps API showing the location, as you click on the maker an info window appears with information of the location, walk and an image of the site selected. Click on the X in the top right-hand corner of the info window to close.
 
 ## Contact
 
@@ -148,11 +156,11 @@ and a message box for any questions required.  This section uses JSemail integra
 
 ## Future Implementations
 
-1. 
-2. 
-3. 
-4. 
-5. 
+1. Closing the info-window in maps when clicking away from it.
+2. Zoom into location after clicking on marker.
+3. Detailed routes of the walks on maps.
+4. Community meet-ups page with booking system.
+5. Custom marker on map with company logo.
 
 
 ## Technologies Used
@@ -179,10 +187,8 @@ and a message box for any questions required.  This section uses JSemail integra
     - GitHub is used to store the projects code after being pushed from Git.
 1. [Tinyjgp:](https://tinyjpg.com/)
     - Tinyjpg was used for resizing images
-1. [Imaging Edge:](https://imagingedge.sony.net/en-gb/ie-desktop.html)
-    - Imaging Edge was used to resize and edit all of the images on the site.
-1. [Autodesk Sketchbook:](https://apps.apple.com/gb/app/autodesk-sketchbook/id883738213#?platform=ipad)
-    - Autodesk Sketchbook was used to create the company logo.
+1. [EmailJS:](https://www.emailjs.com/)
+    - EmailJS was used to send email from the contact page using JavaScript
 1. [Balsamiq:](https://balsamiq.com/)
     - Balsamiq was used to create the [wireframes]() during the design process.
 1. [Chrome DevTools:](https://developers.google.com/web/tools/chrome-devtools)
