@@ -57,13 +57,14 @@ This is the website for Walk Locally, a walking project that aims to help users 
 
 #### First Time User Goals
 
-1. As a first-time user to the site, I want to understand the main purpose of the site and discover the walking routes in my local area.
+1. As a first-time user to the site, I want to understand the main purpose of the site and discover the walking routes around the local area i am visiting.
 
 2. As a first-time user to the site, I want to be able to easily navigate throughout the site to find content.
 
-3. As a first-time user to the site, I want to see clear information and photos locations available. 
+3. As a first-time user to the site, I want to see clear information and photo’s locations available. 
 
-4. As a first-time user to the site, I also want to locate their social media links to help with the choice of walk I take.
+4. As a first-time user to the site, I would like to sign up to keep upto date with the website.
+
         
 #### Returning User Goals
 
@@ -71,17 +72,13 @@ This is the website for Walk Locally, a walking project that aims to help users 
 
 2. As a returning user, I want to be able to know my way around the site.
 
-3. As a returning user, 
-
-4. As a returning user, 
+3. As a returning user, I also want to locate their social media links to help with the choice of walk I take.
 
 #### Frequent User Goals
 
-1. As a Frequent User, I want to see more walking routes added.
+1. As a Frequent User, I want to add/suggest walking routes of my own.
 
-2. As a Frequent User, I want to feel like I am apart of a community.
-
-3. As a Frequent User, 
+2. As a Frequent User, I want the site to work perfectly on my mobile phone as I would use it if I was out walking.
 
 
 ## Design
@@ -139,7 +136,7 @@ The footer displays social media site links for:
 
 ### Animated Hero Image
 
-On the home screen you will be greeted by and animated image with a large title in the middle.
+On the home screen you will be greeted by and animated image with a large title in the middle, this is implementated on each page.
 
 ### Featured Cards
 
@@ -157,10 +154,10 @@ and a message box for any questions required.  This section uses JSemail integra
 ## Future Implementations
 
 1. Closing the info-window in maps when clicking away from it.
-2. Zoom into location after clicking on marker.
+2. A more detailed form users can suggest routes.
 3. Detailed routes of the walks on maps.
 4. Community meet-ups page with booking system.
-5. Custom marker on map with company logo.
+5. Custom markers on map with company logo.
 
 
 ## Technologies Used
@@ -210,33 +207,32 @@ and a message box for any questions required.  This section uses JSemail integra
 
 #### First Time User Testing
 
-1. As a first-time user to the site, 
-2. As a first-time user to the site, 
-3. As a first-time user to the site,  
+1. As a first-time user to the site, I found the site to be very straightforward and I understand that Walk Locally is a website focused on walking in the local area that you are visiting.
+2. As a first-time user to the site, I found the site very easy to navigate around when using my mobile and desktop.
+3. As a first-time user to the site, I found that the site has a great variety of photos.
+4. As a first-time user to the site, I like that it was easy to sign up and speak to Walk Locally directly with the message in the contact section.
 
 #### Returning User Testing
 
-1.    As a returning user, 
-2.	  As a returning user, 
-3.    As a returning user, 
-4.    As a returning user, 
+1.    As a returning user, I felt that I didn't need to work my way around the site again, I knew what I wanted and where it was.
+2.	  As a returning user, I really liked the pop-up window in maps that gives information of the area I am looking to visit.
+3.    As a returning user, The social media links were easily found at the foot of each page.
 
 #### Frequent User Testing
 
-1. As a Frequent User, 
-2. As a Frequent User, 
-3. As a Frequent User, 
+1. As a Frequent User, I really like the usage on mobile, in particular the animations.
+2. As a Frequent User, I used the contact section to suggest a walking route in my local area.
 
 ### Further Testing
 
--   
--   
--   
--   
+-   The website was tested on Google Chrome, Microsoft Edge and Safari browsers.
+-   The website was viewed on a variety of devices such as Desktop, MacBook Pro 13, iPad 11.2, iPhone 11, iPhone 8 & Samsung a71.
+-   A large amount of testing was done to ensure that all pages were linking correctly and looked great on all devices.
+-   Friends and family have reviewed the site and highlighted any bugs and/or user experience issues.
 
 ### Known Bugs
 
--   
+-   When closing a info-window the user is only able to close down with the X in the top right hand corner of the info-window.  When clicking on others they overlay the other opened windows.
 
 ## Deployment
 
