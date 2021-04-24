@@ -46,11 +46,9 @@ This is the website for Walk Locally, a walking project that aims to help users 
 
 2. As the owner of the website, I want to be able to present a clean and easy to navigate website that focus' on a mobile experience for when the user is out and about.
 
-3. As the owner of the website, I want engagement with user to understand what they want from the the website to help with future implementations.
+3. As the owner of the website, I want the site to be able to offer route suggestions of their preferred walk.
 
-4. As the owner of the website, I want the site to be able to offer routes of their preferred walk.
-
-5. As the owner of the website, I would like our users but connect with us on our social media platforms. 
+4. As the owner of the website, I would like our users but connect with us on our social media platforms. 
 
 
 ## User stories
@@ -91,11 +89,11 @@ This is the website for Walk Locally, a walking project that aims to help users 
 
 #### Typography
 
-The Lato is the main font used throughout the site with Sans Serif as the fallback font in case for any reason the font isn't being imported into the site correctly. Open-Sans.
+The Lato is the main font used throughout the site with Sans Serif as the fallback font in case for any reason the font isn't being imported into the site correctly. Open-Sans is also used throughout the site to support Lato.
 
 #### Imagery
 
-Imagery is important. The large, hero image is designed to be striking and catch the user's attention. It also calls out community to me and this want I wanted to bring to the home page.
+Imagery is important. The large, hero image is designed to be striking and catch the user's attention, I have added animations to emphasise this.
 
 #### Wireframes
 
@@ -182,6 +180,8 @@ and a message box for any questions required.  This section uses JSemail integra
     - GitPod was used for version control by utilizing the Gitpod terminal to commit and push to GitHub.
 1. [GitHub:](https://github.com/)
     - GitHub is used to store the projects code after being pushed from Git.
+1. [Google Maps API:](https://developers.google.com/maps/documentation)
+    - Google Maps API is integrated into locations.html.
 1. [Tinyjgp:](https://tinyjpg.com/)
     - Tinyjpg was used for resizing images
 1. [EmailJS:](https://www.emailjs.com/)
@@ -196,6 +196,23 @@ and a message box for any questions required.  This section uses JSemail integra
 ### Functionality Testing 
 
  I used Chrome DevTools throughout the project for testing and solving problems with responsiveness and style issues.
+
+ ### HTML5
+
+ I ran the code through [W3C Markup Validation](https://validator.w3.org/)
+ <h2 align="center"><img src="assets/images/validationhtml.png"></h2>
+
+ ### CSS3
+
+ I ran the code through [W3C CSS Validator](https://jigsaw.w3.org/css-validator/) errors and warnings are from Bootstrap and I am unable to resolve this.
+ <h2 align="center"><img src="assets/images/validationcss.png"></h2>
+
+ ### JavaScript
+
+ I ran the code through [JSHint](https://jshint.com/)
+ <h2 align="center"><img src="assets/images/validationjs.png"></h2>
+ <h2 align="center"><img src="assets/images/validationjsemail.png"></h2>
+ 
 
 
 ### Compatibility Testing
@@ -264,15 +281,19 @@ To run localy:
     - [w3schools.com](https://www.w3schools.com)
 
     - [getbootstrap.com/docs](https://getbootstrap.com/docs/4.6/getting-started/introduction/)
+
+    - [Google Maps API](https://developers.google.com/maps/documentation)
        
 
 ### Code
 
 -   [Bootstrap4](https://getbootstrap.com/docs/4.6/getting-started/introduction/): Bootstrap Library used throughout the project mainly to make site responsive using the Bootstrap Grid System.
 
--   [W3 Validator]
+-   [W3 Validator](https://validator.w3.org/)
 
--   [W3C CSS Jigsaw](https://jigsaw.w3.org/css-validator/validator
+-   [W3C CSS Jigsaw](https://validator.w3.org/)
+
+-   [Jasmine](https://jasmine.github.io/)
 
 ### Content
 
@@ -292,18 +313,11 @@ To run localy:
 
 ## Project screenshots
 
-<h2 align="center"><img src=""></h2>
+<h2 align="center"><img src="assets/images/desktop.png"></h2>
 
-<h2 align="center"><img src=""></h2>
+<h2 align="center"><img src="assets/images/tablet.png"></h2>
 
-<h2 align="center"><img src=""></h2>
-
-<h2 align="center"><img src=""></h2>
-
-<h2 align="center"><img src=""></h2>
-
-<h2 align="center"><img src=""></h2>
-
+<h2 align="center"><img src="assets/images/smartphone.png"></h2>
 
 [Back to Table of contents](#table-of-contents)
 
